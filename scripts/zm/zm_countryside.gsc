@@ -52,6 +52,9 @@
 
 #using scripts\zm\zm_usermap;
 
+// Sphynx's Utils
+#using scripts\Sphynx\_zm_sphynx_util;
+
 //*****************************************************************************
 // MAIN
 //*****************************************************************************
@@ -80,8 +83,18 @@ function main()
     level.pack_a_punch_camo_index = 28;
     level.pack_a_punch_camo_index_number_variants = 1;
 
-	// Sphynx's Utils
-	#using scripts\Sphynx\_zm_sphynx_util;
+	// Hitmarkers
+	zm_sphynx_util::enabble_bo4_zombie_hitmarkers();
+
+	// Bo4 Max Ammo & Carpenter
+	zm_sphynx_util::black_ops_4_ammo();
+	zm_sphynx_util::black_ops_4_carpenter();
+
+	// Zombie Health Round Cap
+	zm_sphynx_util::zombie_health_cap( 55 );
+
+	// Zombie Limit Cap (Per Player)
+	zm_sphynx_util::zombie_limit_increase( 24, 8 );
 
 	// Power Lights
 	level thread PowerLights();
@@ -93,6 +106,9 @@ function main()
 	level thread zm_zonemgr::manage_zones( init_zones );
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
+
+	// Intro Typewriter Text
+	level thread zm_sphynx_util::intro_screen_text("COUNTRYSIDE", "SOMEWHERE IN MIDWEST USA", "JUNE 2030");
 }
 
 function usermap_test_zone_init()
