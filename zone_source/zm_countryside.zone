@@ -14,7 +14,7 @@ sound,zm_countryside
 // Custom weapon table
 stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 
-// Usermaps scripts
+// zm_countryside scripts
 scriptparsetree,scripts/zm/zm_countryside.gsc
 scriptparsetree,scripts/zm/zm_countryside.csc
 
