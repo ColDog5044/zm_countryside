@@ -60,7 +60,31 @@ function main()
 {
 	zm_usermap::main();
 	
+	// Custom Weapon Table
 	level._zombie_custom_add_weapons =&custom_add_weapons;
+	
+	// Starting Points
+	level.player_starting_points = 500000;
+
+	// Starting Perk Limit
+	level.perk_purchase_limit = 5;
+
+	// Last Stand Weapon & Starting Weapon
+    level.default_laststandpistol = getWeapon( "t9_1911" ); // The one you get if you go down in co-op and didnt have another pistol
+    level.default_solo_laststandpistol = getWeapon ( "ray_gun_upgraded" ); // The one you get with quickrevive in solo
+    level.laststandpistol = level.default_laststandpistol;
+    level.start_weapon = level.default_laststandpistol;
+    level thread zm::last_stand_pistol_rank_init();
+
+    // PaP Camo
+    level.pack_a_punch_camo_index = 28;
+    level.pack_a_punch_camo_index_number_variants = 1;
+
+	// Sphynx's Utils
+	#using scripts\Sphynx\_zm_sphynx_util;
+
+	// Power Lights
+	level thread PowerLights();
 	
 	//Setup the levels Zombie Zone Volumes
 	level.zones = [];
@@ -82,3 +106,12 @@ function custom_add_weapons()
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
 }
 
+// Power Lights
+function PowerLights()
+{
+    level flag::wait_till("initial_blackscreen_passed");
+    level util::set_lighting_state(0);
+
+    level flag::wait_till("power_on");
+    level util::set_lighting_state(1);
+}

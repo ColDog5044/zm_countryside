@@ -18,6 +18,9 @@ stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 scriptparsetree,scripts/zm/zm_countryside.gsc
 scriptparsetree,scripts/zm/zm_countryside.csc
 
+// Sphynx's Utils
+include,spx_util_script
+
 // Skye's CW weapons
 weapon,t9_410ironhide
 weapon,t9_410ironhide_up
