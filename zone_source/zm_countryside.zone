@@ -11,20 +11,17 @@ gfx_map,maps/zm/zm_countryside.d3dbsp
 // Audio
 sound,zm_countryside
 
-// Custom weapon table
-stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
-
 // zm_countryside scripts
 scriptparsetree,scripts/zm/zm_countryside.gsc
 scriptparsetree,scripts/zm/zm_countryside.csc
+
+// Custom weapon table
+stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 
 // Sphynx's Utils
 include,spx_util_script
 
 // Skye's CW weapons
-weapon,t9_410ironhide
-weapon,t9_410ironhide_up
-
 weapon,t9_1911
 weapon,t9_1911_rdw_up_zm
 weapon,t9_1911_ldw_up_zm

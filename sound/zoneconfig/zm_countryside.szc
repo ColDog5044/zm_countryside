@@ -20,12 +20,6 @@
  "Specs" : [ ] 
 },
 {
-	"Type" : "ALIAS",
-	"Name" : "zm_castle_vox",
-	"Filename" : "zm_castle_vox.csv",
-	"Specs" : [ ] 
-},
-{
  "Type" : "AMBIENT",
  "Name" : "ambient_mod",
  "Filename" : "ambient_mod.csv",

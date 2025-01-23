@@ -84,17 +84,17 @@ function main()
     level.pack_a_punch_camo_index_number_variants = 1;
 
 	// Hitmarkers
-	zm_sphynx_util::enabble_bo4_zombie_hitmarkers();
+	//zm_sphynx_util::enable_bo4_zombie_hitmarkers();
 
 	// Bo4 Max Ammo & Carpenter
-	zm_sphynx_util::black_ops_4_ammo();
-	zm_sphynx_util::black_ops_4_carpenter();
+	//zm_sphynx_util::black_ops_4_ammo();
+	//zm_sphynx_util::black_ops_4_carpenter();
 
 	// Zombie Health Round Cap
-	zm_sphynx_util::zombie_health_cap( 55 );
+	//zm_sphynx_util::zombie_health_cap( 55 );
 
 	// Zombie Limit Cap (Per Player)
-	zm_sphynx_util::zombie_limit_increase( 24, 8 );
+	//zm_sphynx_util::zombie_limit_increase( 24, 8 );
 
 	// Power Lights
 	level thread PowerLights();
