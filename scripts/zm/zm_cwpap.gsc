@@ -40,8 +40,8 @@
 #define SND_UNSUP_PAPPING          true      // true = sound when trying to pap an unpappable weapon || false = no sound
 #define USE_HAND_KNUCKLE           false     // true = knuckle anim enabled || false = knuckle anim disabled
 #define AAT_FX_COLORS              2       // 1 = all AAT red fx || 2 = each AAT gets its own fx color
-#define TRIGGER_COOLDOWN_TIME      2      // The time it takes for the trigger to cool down (seconds)
-#define UPGRADE_FXANIM_TIME        2     // The time the upgrading fx and anim lasts after upgrading (seconds), anim will start repeating at 5 seconds #RECOMMENDED TO BE THE SAME OR LOWER THAN TRIGGER COOLDOWN TIME#, IF YOU CHANGE THIS ALSO CHANGE THE FXS ITERATIONS
+#define TRIGGER_COOLDOWN_TIME      1      // The time it takes for the trigger to cool down (seconds)
+#define UPGRADE_FXANIM_TIME        1     // The time the upgrading fx and anim lasts after upgrading (seconds), anim will start repeating at 5 seconds #RECOMMENDED TO BE THE SAME OR LOWER THAN TRIGGER COOLDOWN TIME#, IF YOU CHANGE THIS ALSO CHANGE THE FXS ITERATIONS
 
 REGISTER_SYSTEM_EX( "zm_cwpap", &__init__, undefined, undefined )
 
