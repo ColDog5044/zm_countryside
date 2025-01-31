@@ -10,6 +10,7 @@ zod_riotshield,zod_riotshield_upgraded,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,
 hero_gravityspikes_melee,hero_gravityspikes_melee,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,,
 thundergun,thundergun_upgraded,,10000,thundergun,,,,,TRUE,FALSE,TRUE,1,,FALSE,TRUE,special,TRUE,TRUE,
 
+t9_410ironhide,t9_410ironhide_up,,1200,shotgun,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
 t9_1911,t9_1911_rdw_up,,300,pistol,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,pistol,,,
 t9_ak47,t9_ak47_up,,1600,rifle,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,rifle,,,
 t9_rpk,t9_rpk_up,,2000,lmg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,lmg,,,

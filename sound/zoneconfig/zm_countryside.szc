@@ -20,6 +20,30 @@
  "Specs" : [ ] 
 },
 {
+	"Type" : "ALIAS",
+	"Name" : "perk_sounds",
+	"Filename" : "perk_sounds.csv",
+	"Specs" : [ ] 
+},
+{
+	"Type" : "ALIAS",
+	"Name" : "wonderfizz_sounds",
+	"Filename" : "wonderfizz_sounds.csv",
+	"Specs" : [ ] 
+},
+{
+  "Type" : "ALIAS",
+  "Name" : "perk_can_alias",
+  "Filename" : "perk_can_alias.csv",
+  "Specs" : [ ] 
+},
+{
+ "Type" : "ALIAS",
+ "Name" : "zm_cwpap_sound",
+ "Filename" : "zm_cwpap_sound.csv",
+ "Specs" : [ ] 
+},
+{
  "Type" : "AMBIENT",
  "Name" : "ambient_mod",
  "Filename" : "ambient_mod.csv",

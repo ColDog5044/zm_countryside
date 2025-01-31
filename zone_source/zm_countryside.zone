@@ -1,6 +1,22 @@
 >class,zm_mod_level
 >group,modtools
 
+// HarryBo21 Perks
+include,hb21_perks
+
+// Perk Cans
+weapon,zombie_perk_can_quick_revive
+weapon,zombie_perk_can_staminaup
+weapon,zombie_perk_can_juggernog
+weapon,zombie_perk_can_deadshot
+weapon,zombie_perk_can_double_tap
+weapon,zombie_perk_can_elemental_pop
+weapon,zombie_perk_can_mule_kick
+weapon,zombie_perk_can_phd_slider
+weapon,zombie_perk_can_speed
+weapon,zombie_perk_can_tombstone
+weapon,zombie_perk_can_widows_wine
+
 xmodel,skybox_default_day
 material,luts_t7_default
 	
@@ -18,10 +34,34 @@ scriptparsetree,scripts/zm/zm_countryside.csc
 // Custom weapon table
 stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 
+// CWPAP
+include,alxs_cwpap
+
+// CW Wunderfizz
+include,db_wunderfizz
+
 // Sphynx's Utils
 include,spx_util_script
 
+// Sphynx's Death Perception
+include,spx_death_perception
+
+// End-game menu
+scriptparsetree,scripts/zm/_zm_intermission_menu.gsc
+scriptparsetree,scripts/zm/_zm_intermission_menu.csc
+rawfile,ui/uieditor/menus/Intermission/Intermission_Main.lua
+
+// All0utWar Perk Return
+scriptparsetree,scripts/zm/_war_perk_return.gsc
+scriptparsetree,scripts/zm/_war_perk_return.gsh
+
+// Inspectable Weapons
+scriptparsetree,scripts\lilrobot\_inspectable_weapons.gsc
+
 // Skye's CW weapons
+weapon,t9_410ironhide
+weapon,t9_410ironhide_up
+
 weapon,t9_1911
 weapon,t9_1911_rdw_up_zm
 weapon,t9_1911_ldw_up_zm

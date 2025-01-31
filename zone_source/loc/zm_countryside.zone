@@ -200,8 +200,9 @@ ignore_missing_shipped,zm_levelcommon
 >level.xpak_read,base_patch_tu32
 >class,zm_mod_level
 >group,modtools
-material,mc/mtl_c_gen_gib_gore_arm_right_a
+localize,hb21_zm_perks
 xmodel,p7_gib_chunk_meat_01
+material,mc/mtl_c_gen_gib_gore_arm_right_a
 xmodel,p7_gib_chunk_meat_02
 xmodel,p7_gib_chunk_meat_03
 xmodel,p7_gib_chunk_flesh_01
@@ -213,3 +214,4 @@ material,mc/mtl_c_gen_gib_gore_leg_thigh_a
 material,mc/mtl_c_gen_gib_gore_leg_calf_a
 material,mc/mtl_c_gen_gib_gore_leg_calf
 sound,zm_countryside
+localize,zombie
