@@ -1,8 +1,4 @@
-return 2002000
-^1ERROR: 'p7_eth_decor_01_rock_01' is not a valid physpreset asset
-  physpreset:p7_eth_decor_01_rock_01
-    xmodel:p7_toilet_bathroom
-      col_map:maps/zm/zm_countryside.d3dbsp
+return 1002000
 ^1ERROR: Material mtl_origins_camo_alt was not found in gdtDB
   material:mc/mtl_origins_camo_alt
     weaponcamo:t9_camo_410ironhide_table
@@ -10,4 +6,4 @@ return 2002000
         csv:zone_source/zm_countryside.zone
 ^3Lit fog settings for "zm_countryside_fsi" have not been enabled. Using defaults.
   gfx_map:maps/zm/zm_countryside.d3dbsp
-^3Found 35 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_countryside/zone_source/all/assetinfo/zm_countryside_bulletreport.csv file.
+^3Found 36 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_countryside/zone_source/all/assetinfo/zm_countryside_bulletreport.csv file.

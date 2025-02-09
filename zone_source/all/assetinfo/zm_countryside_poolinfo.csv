@@ -2,13 +2,13 @@ type,limit,total
 physpreset,276,3
 physconstraints,159,0
 destructibledef,128,0
-xanim,25000,2326
-xmodel,10240,961
-xmodelmesh,34816,1997
-material,20480,2077
+xanim,25000,2338
+xmodel,10240,974
+xmodelmesh,34816,2063
+material,20480,2091
 computeshaderset,256,0
-techset,1024,117
-image,49152,5535
+techset,1024,118
+image,49152,5555
 sound,32,1
 sound_patch,16,0
 col_map,2,1
@@ -37,7 +37,7 @@ customizationtable,8,0
 customizationtable_feimages,8,0
 customizationtablecolor,1024,0
 snddriverglobals,1,0
-fx,1875,263
+fx,1875,265
 tagfx,64,0
 klf,64,7
 impactsfxtable,256,3
@@ -64,7 +64,7 @@ surfacesounddef,256,19
 footsteptable,32,2
 entityfximpacts,256,3
 entitysoundimpacts,256,9
-zbarrier,16,1
+zbarrier,16,2
 vehiclefxdef,32,0
 vehiclesounddef,32,0
 typeinfo,0,0

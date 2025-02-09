@@ -296,11 +296,11 @@ function main()
     level.pack_a_punch_camo_index_number_variants = 1;
 
 	// Hitmarkers
-	//zm_sphynx_util::enable_bo4_zombie_hitmarkers();
+	zm_sphynx_util::enable_bo4_zombie_hitmarkers();
 
 	// Bo4 Max Ammo & Carpenter
-	//zm_sphynx_util::black_ops_4_ammo();
-	//zm_sphynx_util::black_ops_4_carpenter();
+	zm_sphynx_util::black_ops_4_ammo();
+	zm_sphynx_util::black_ops_4_carpenter();
 
 	// Zombie Health Round Cap
 	//zm_sphynx_util::zombie_health_cap( 55 );
@@ -308,26 +308,27 @@ function main()
 	// Zombie Limit Cap (Per Player)
 	//zm_sphynx_util::zombie_limit_increase( 24, 8 );
 
+	// Intro Typewriter Text
+	level thread zm_sphynx_util::intro_screen_text("COUNTRYSIDE", "SOMEWHERE IN MIDWEST USA", "JUNE 2030");
+
 	// Local Power Zones
 	thread power();
 	
 	//Setup the levels Zombie Zone Volumes
 	level.zones = [];
-	level.zone_manager_init_func =&usermap_test_zone_init;
+	level.zone_manager_init_func =&countryside_zone_init;
 	init_zones[0] = "start_zone";
 	init_zones[1] = "perk_demo_zone";
 	level thread zm_zonemgr::manage_zones( init_zones );
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
-
-	// Intro Typewriter Text
-	level thread zm_sphynx_util::intro_screen_text("COUNTRYSIDE", "SOMEWHERE IN MIDWEST USA", "JUNE 2030");
 }
 
-function usermap_test_zone_init()
+function countryside_zone_init()
 {
-	//zm_zonemgr::add_adjacent_zone("start_zone", "perk_demo_zone");
-
+	zm_zonemgr::add_adjacent_zone( "start_zone", "garage_zone", "enter_garage_zone");
+	zm_zonemgr::add_adjacent_zone( "start_zone", "house_zone", "enter_house_zone" );
+	zm_zonemgr::add_adjacent_zone( "garage_zone", "house_zone", "enter_house_zone" );
 	level flag::init( "always_on" );
 	level flag::set( "always_on" );
 }	
