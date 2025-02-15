@@ -4,6 +4,18 @@
 // HarryBo21 Perks
 include,hb21_perks
 
+// Sphynx's Death Perception
+include,spx_death_perception
+
+// Sphynx's Utils
+include,spx_util_script
+
+// CW Wunderfizz
+include,db_wunderfizz
+
+// CW PAP
+include,alxs_cwpap
+
 // Perk Cans
 weapon,zombie_perk_can_quick_revive
 weapon,zombie_perk_can_staminaup
@@ -33,18 +45,6 @@ scriptparsetree,scripts/zm/zm_countryside.csc
 
 // Custom weapon table
 stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
-
-// CWPAP
-include,alxs_cwpap
-
-// CW Wunderfizz
-include,db_wunderfizz
-
-// Sphynx's Utils
-include,spx_util_script
-
-// Sphynx's Death Perception
-include,spx_death_perception
 
 // End-game menu
 scriptparsetree,scripts/zm/_zm_intermission_menu.gsc
